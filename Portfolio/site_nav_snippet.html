@@ -1,0 +1,103 @@
+<!-- ============================================================
+     SHARED NAV + SIDEBAR — paste this block into every page.
+     Change the class="active" href to match the current page.
+     ============================================================ -->
+
+<!-- SIDEBAR -->
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar(event)">
+  <div class="sidebar-backdrop"></div>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-title">Explore</div>
+      <button class="sidebar-close" onclick="closeSidebarDirect()">✕</button>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Work</div>
+      <a href="projects.html" class="sidebar-link" onclick="closeSidebarDirect()">
+        <div class="sl-left">
+          <div class="sl-icon" style="background:#fdf0f3;">🔴</div>
+          <div><div class="sl-name">Projects</div><div class="sl-desc">CPS Connect, YouTube, Alexa and more</div></div>
+        </div>
+        <span class="sl-arrow">→</span>
+      </a>
+      <a href="internships.html" class="sidebar-link" onclick="closeSidebarDirect()">
+        <div class="sl-left">
+          <div class="sl-icon" style="background:#f0f0f0;">🏢</div>
+          <div><div class="sl-name">Internships</div><div class="sl-desc">SharkNinja Brand Marketing Co-op</div></div>
+        </div>
+        <span class="sl-arrow">→</span>
+      </a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Creative</div>
+      <a href="photography.html" class="sidebar-link" onclick="closeSidebarDirect()">
+        <div class="sl-left">
+          <div class="sl-icon" style="background:#eef8f7;">📷</div>
+          <div><div class="sl-name">Photography and Film</div><div class="sl-desc">Streets, people, Boston and more</div></div>
+        </div>
+        <span class="sl-arrow">→</span>
+      </a>
+      <a href="blog.html" class="sidebar-link" onclick="closeSidebarDirect()">
+        <div class="sl-left">
+          <div class="sl-icon" style="background:#faf8f3;">✍️</div>
+          <div><div class="sl-name">Blog</div><div class="sl-desc">Thoughts on marketing and media</div></div>
+        </div>
+        <span class="sl-arrow">→</span>
+      </a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Me</div>
+      <a href="index.html#about" class="sidebar-link" onclick="closeSidebarDirect()">
+        <div class="sl-left">
+          <div class="sl-icon" style="background:#fdf0f3;">🌿</div>
+          <div><div class="sl-name">About me</div><div class="sl-desc">Aishu in her own words</div></div>
+        </div>
+        <span class="sl-arrow">→</span>
+      </a>
+      <a href="contact.html" class="sidebar-link" onclick="closeSidebarDirect()">
+        <div class="sl-left">
+          <div class="sl-icon" style="background:#f0f0f0;">✉️</div>
+          <div><div class="sl-name">Contact</div><div class="sl-desc">Let's talk</div></div>
+        </div>
+        <span class="sl-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-mark">A</div>
+    Aishwarya Sivakumar
+  </a>
+  <div class="nav-links">
+    <!-- Set class="active" on whichever link matches the current page -->
+    <a href="projects.html">Projects</a>
+    <a href="internships.html">Internships</a>
+    <a href="photography.html">Photography</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-pink" style="font-size:13px;padding:8px 18px;" onclick="openSidebar()">
+      View my work ☰
+    </button>
+  </div>
+</nav>
+
+<!-- SIDEBAR SCRIPT — paste once per page, before </body> -->
+<script>
+function openSidebar() {
+  document.getElementById('sidebarOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeSidebarDirect() {
+  document.getElementById('sidebarOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeSidebar(e) {
+  if (e.target.classList.contains('sidebar-backdrop')) closeSidebarDirect();
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSidebarDirect(); });
+</script>

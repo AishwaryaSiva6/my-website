@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Aishwarya Sivakumar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar(event)">
+    <div class="sidebar-backdrop"></div>
+    <div class="sidebar">
+      <div class="sidebar-header"><div class="sidebar-title">Explore</div><button class="sidebar-close" onclick="closeSidebarDirect()">✕</button></div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-label">Work</div>
+        <a href="projects.html" class="sidebar-link"><div class="sl-left"><div class="sl-icon" style="background:#fdf0f3;">🔴</div><div><div class="sl-name">Projects</div><div class="sl-desc">CPS Connect, YouTube, Alexa and more</div></div></div><span class="sl-arrow">→</span></a>
+        <a href="internships.html" class="sidebar-link"><div class="sl-left"><div class="sl-icon" style="background:#f0f0f0;">🏢</div><div><div class="sl-name">Internships</div><div class="sl-desc">SharkNinja Brand Marketing Co-op</div></div></div><span class="sl-arrow">→</span></a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-label">Creative</div>
+        <a href="photography.html" class="sidebar-link"><div class="sl-left"><div class="sl-icon" style="background:#eef8f7;">📷</div><div><div class="sl-name">Photography and Film</div><div class="sl-desc">Streets, people, Boston and more</div></div></div><span class="sl-arrow">→</span></a>
+        <a href="blog.html" class="sidebar-link"><div class="sl-left"><div class="sl-icon" style="background:#faf8f3;">✍️</div><div><div class="sl-name">Blog</div><div class="sl-desc">Thoughts on marketing and media</div></div></div><span class="sl-arrow">→</span></a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-label">Me</div>
+        <a href="index.html#about" class="sidebar-link"><div class="sl-left"><div class="sl-icon" style="background:#fdf0f3;">🌿</div><div><div class="sl-name">About me</div><div class="sl-desc">Aishu in her own words</div></div></div><span class="sl-arrow">→</span></a>
+        <a href="contact.html" class="sidebar-link"><div class="sl-left"><div class="sl-icon" style="background:#f0f0f0;">✉️</div><div><div class="sl-name">Contact</div><div class="sl-desc">Let's talk</div></div></div><span class="sl-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html" class="nav-brand"><div class="nav-brand-mark">A</div>Aishwarya Sivakumar</a>
+    <div class="nav-links">
+      <a href="projects.html" class="active">Projects</a>
+      <a href="internships.html">Internships</a>
+      <a href="photography.html">Photography</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="btn-pink" style="font-size:13px;padding:8px 18px;" onclick="openSidebar()">View my work ☰</button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <p class="s-label">Selected projects</p>
+    <h1 class="s-title">Things I've built,<br>launched, and learned from.</h1>
+    <p style="font-size:16px;color:var(--gray-500);max-width:520px;line-height:1.7;margin-top:.5rem;">
+      Every project here started with a real problem. Click any card to read the full case study.
+    </p>
+
+    <div class="projects-grid">
+
+      <a href="cps-connect.html" class="project-card wide">
+        <div class="pc-thumb tall" style="background:linear-gradient(135deg,#ffeef1,#ffd6de);">
+          🔴
+          <div class="pc-label">UX Research and Redesign</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat" style="color:var(--pink);">Capstone Project</div>
+          <div class="pc-title">CPS Connect Redesign</div>
+          <div class="pc-desc">A full UX research and redesign project for Northeastern's student engagement platform. From audit to validated findings across 50 participants, two rounds of usability testing, and a complete design strategy.</div>
+          <div class="pc-footer">
+            <div class="pc-tags"><span class="pc-tag">UX Research</span><span class="pc-tag">Redesign</span><span class="pc-tag">Usability Testing</span></div>
+            <span class="pc-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="elluminations.html" class="project-card">
+        <div class="pc-thumb" style="background:linear-gradient(135deg,#f5edd8,#ead9a0);">
+          📸
+          <div class="pc-label">SEO and Paid Ads</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat" style="color:#b8862a;">Client Project</div>
+          <div class="pc-title">E-lluminations Photography</div>
+          <div class="pc-desc">Full-cycle SEO, GEO, and Meta Ads for a MA portrait studio. 30% engagement lift and 15% CPA reduction.</div>
+          <div class="pc-footer">
+            <div class="pc-tags"><span class="pc-tag">SEO</span><span class="pc-tag">GEO</span><span class="pc-tag">Meta Ads</span></div>
+            <span class="pc-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="youtube-premium.html" class="project-card">
+        <div class="pc-thumb" style="background:linear-gradient(135deg,#eef8f7,#b8e8e4);">
+          ▶
+          <div class="pc-label">GTM Strategy</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat" style="color:var(--mint);">Strategy</div>
+          <div class="pc-title">YouTube Premium Relaunch</div>
+          <div class="pc-desc">Full go-to-market strategy with audience segmentation, competitive positioning, and a phased channel rollout. Projected 28% conversion lift.</div>
+          <div class="pc-footer">
+            <div class="pc-tags"><span class="pc-tag">GTM</span><span class="pc-tag">Positioning</span><span class="pc-tag">+28% Conv.</span></div>
+            <span class="pc-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="alexa-geo.html" class="project-card">
+        <div class="pc-thumb" style="background:linear-gradient(135deg,#faf8f3,#e8dfc4);">
+          🔵
+          <div class="pc-label">GEO and AI Visibility</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat" style="color:var(--taupe);">Research</div>
+          <div class="pc-title">Amazon Alexa AI Visibility Audit</div>
+          <div class="pc-desc">Audited Alexa across 45+ queries on Google AI Overviews, ChatGPT, and Perplexity. Built a 12-point entity optimization framework.</div>
+          <div class="pc-footer">
+            <div class="pc-tags"><span class="pc-tag">GEO</span><span class="pc-tag">AI Audit</span><span class="pc-tag">+28% Inclusion</span></div>
+            <span class="pc-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="roomie.html" class="project-card">
+        <div class="pc-thumb" style="background:linear-gradient(135deg,var(--pink-light),#f7c8d0);">
+          🏠
+          <div class="pc-label">Product Design and Pitch</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat" style="color:var(--pink);">Startup</div>
+          <div class="pc-title">Roomie — Pre-Seed Pitch</div>
+          <div class="pc-desc">Swipe-based roommate matching app. Product design, unit economics, GTM strategy, and a $50K pre-seed investor pitch deck.</div>
+          <div class="pc-footer">
+            <div class="pc-tags"><span class="pc-tag">Product</span><span class="pc-tag">Figma MVP</span><span class="pc-tag">2.83x LTV</span></div>
+            <span class="pc-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-copy">© 2025 Aishwarya Sivakumar</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="internships.html">Internships</a>
+      <a href="photography.html">Photography</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    function openSidebar(){document.getElementById('sidebarOverlay').classList.add('open');document.body.style.overflow='hidden';}
+    function closeSidebarDirect(){document.getElementById('sidebarOverlay').classList.remove('open');document.body.style.overflow='';}
+    function closeSidebar(e){if(e.target.classList.contains('sidebar-backdrop'))closeSidebarDirect();}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSidebarDirect();});
+  </script>
+</body>
+</html>
