@@ -8,7 +8,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/project.css">
-<style>:root{--ac:#5A7A8A;--ac-light:#E4EDF2;--ac-text:#2A4A5A;}</style>
+<style>:root{--ac:#5A7A8A;--ac-light:#E4EDF2;--ac-text:#2A4A5A;}
+.view-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;padding:8px 18px;border-radius:6px;border:1px solid var(--ac);color:var(--ac);background:transparent;cursor:pointer;transition:all 0.2s;text-decoration:none;margin-top:1rem;}
+.view-btn:hover{background:var(--ac);color:#fff;}
+.proof-panel{display:none;margin-top:1rem;border-radius:10px;overflow:hidden;border:0.5px solid rgba(0,0,0,0.08);}
+.proof-panel.open{display:block;}
+.proof-panel img,.proof-panel video{width:100%;display:block;border-radius:8px;}
+.proof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:1rem;}
+.proof-grid img{width:100%;border-radius:8px;border:0.5px solid rgba(0,0,0,0.06);}
+.venn-wrap{max-width:600px;margin:0 auto 2rem;}
+.venn-wrap img{width:100%;}
+@media(max-width:768px){.proof-grid{grid-template-columns:1fr 1fr;}}
+</style>
 </head>
 <body>
 <nav class="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo"><img src="../assets/logo.png" alt="AS"></a><div class="nav-links"><a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../photography.html">Photography</a><a href="../blog.html">Blog</a><a href="../contact.html">Contact</a></div><div class="nav-hamburger"><span></span><span></span><span></span></div></div></nav>
@@ -18,41 +29,53 @@
 <div class="container">
 <a href="../projects.html" class="back-link fade-up">← Back to Projects</a>
 <div class="project-hero">
-  <div class="project-hero-tag fade-up" style="color:var(--ac);border-color:var(--ac);">Brand Marketing and IMC Co-op · SharkNinja · Boston MA</div>
-  <h1 class="project-hero-title fade-up delay-1">Shark Hardfloor <span style="color:var(--ac)">360 Brand Marketing</span></h1>
-  <p class="project-hero-sub fade-up delay-2">A full-cycle brand marketing and integrated marketing communications co-op at SharkNinja, spanning packaging, retail listings, email marketing, paid social, social video, and CGI content strategy for the Shark Hardfloor product line.</p>
+  <div class="project-hero-tag fade-up" style="color:var(--ac);border-color:var(--ac);">Co-op Experience · SharkNinja · Needham, MA</div>
+  <h1 class="project-hero-title fade-up delay-1">Shark Hardfloor <span style="color:var(--ac)">Brand Marketing</span></h1>
+  <p class="project-hero-sub fade-up delay-2">A 360 brand marketing and integrated marketing communications co-op at SharkNinja, spanning packaging, retail collateral, email marketing, paid social, social video, and CGI content strategy for the Shark Hardfloor product line.</p>
   <div class="project-chips fade-up delay-3">
     <span class="p-chip" style="background:var(--ac-light);border-color:var(--ac);color:var(--ac-text)">Brand Marketing</span>
     <span class="p-chip" style="background:var(--ac-light);border-color:var(--ac);color:var(--ac-text)">IMC</span>
-    <span class="p-chip" style="background:var(--ac-light);border-color:var(--ac);color:var(--ac-text)">360 Campaign Execution</span>
-    <span class="p-chip">Amazon A+ Content</span><span class="p-chip">Packaging</span><span class="p-chip">Paid Social</span><span class="p-chip">CGI Creative Brief</span><span class="p-chip">Email Marketing</span>
+    <span class="p-chip">Amazon A+ Content</span><span class="p-chip">Packaging</span><span class="p-chip">Paid Social</span><span class="p-chip">Email Marketing</span><span class="p-chip">CGI Creative Brief</span><span class="p-chip">Social Video</span>
   </div>
   <div class="project-hero-stats fade-up delay-4">
-    <div><div class="phs-n" style="color:var(--ac)">360</div><div class="phs-l">Marketing Coverage</div></div>
-    <div><div class="phs-n" style="color:var(--ac)">6+</div><div class="phs-l">Projects Delivered</div></div>
-    <div><div class="phs-n" style="color:var(--ac)">Real</div><div class="phs-l">Live Client Work</div></div>
-    <div><div class="phs-n" style="color:var(--ac)">Cross</div><div class="phs-l">Functional Execution</div></div>
+    <div><div class="phs-n" style="color:var(--ac)">360</div><div class="phs-l">Marketing</div></div>
+    <div><div class="phs-n" style="color:var(--ac)">10+</div><div class="phs-l">Projects Delivered</div></div>
   </div>
 </div>
 </div>
 
-<!-- OVERVIEW -->
+<!-- THE ROLE -->
 <div class="project-section">
 <div class="container">
   <p class="ps-label fade-up" style="color:var(--ac)">01 · The Role</p>
-  <h2 class="ps-title fade-up">What this co-op actually was</h2>
-  <p class="ps-sub fade-up">Every project was a real deliverable with real deadlines, real legal constraints, and real cross-functional stakeholders.</p>
-  <div class="p-three-col fade-up" style="margin-bottom:2rem;">
-    <div class="p-stat-card"><div class="n" style="font-size:1.4rem;color:var(--ac);">Progress Over Perfection</div><div class="l">SharkNinja value that drove the email launch. Move fast, stay accurate.</div></div>
-    <div class="p-stat-card"><div class="n" style="font-size:1.4rem;color:var(--ac);">Details Make the Difference</div><div class="l">The packaging update mindset. Every boilerplate line matters at scale.</div></div>
-    <div class="p-stat-card"><div class="n" style="font-size:1.4rem;color:var(--ac);">Winning is a Team Sport</div><div class="l">The social video initiative. Spotting a gap and filling it for the whole team.</div></div>
+  <h2 class="ps-title fade-up">A 360 marketing experience</h2>
+  <p class="ps-sub fade-up">I was a Brand Marketing and IMC co-op on SharkNinja's Hardfloor team, where I worked across the full spectrum of marketing - from the packaging consumers see on shelves to the social content that builds community around the product.</p>
+
+  <div class="fade-up" style="margin-bottom:2rem;">
+    <div class="p-three-col">
+      <div class="p-stat-card" style="text-align:center;border-top:3px solid var(--ac);">
+        <div style="font-size:13px;font-weight:500;color:var(--ac);margin-bottom:8px;">Brand marketing</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;">Packaging updates, retail collateral, gallery and A+ content, copywriting</div>
+      </div>
+      <div class="p-stat-card" style="text-align:center;border-top:3px solid #E8713A;">
+        <div style="font-size:13px;font-weight:500;color:#E8713A;margin-bottom:8px;">IMC</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;">Email marketing, paid social ads, social video content, CGI creative briefs</div>
+      </div>
+      <div class="p-stat-card" style="text-align:center;border-top:3px solid #333;">
+        <div style="font-size:13px;font-weight:500;color:#333;margin-bottom:8px;">Strategy</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;">Competitive analysis, content audits, whitespace identification, SEO-led copy</div>
+      </div>
+    </div>
   </div>
+
+  <h3 class="p-heading-sm fade-up">What this co-op really was</h3>
+  <p class="p-body-text fade-up">Every project was a real deliverable with real deadlines, real legal constraints, and real cross-functional stakeholders. The role demanded the ability to switch between meticulous detail work - checking every disclaimer on a package - and big-picture strategic thinking, like identifying a gap in our social content and creating a solution from scratch.</p>
 </div>
 </div>
 
 <div class="p-divider"></div>
 
-<!-- PROJECT 1: EMAILER -->
+<!-- EMAILER -->
 <div class="project-section alt">
 <div class="container">
   <p class="ps-label fade-up" style="color:var(--ac)">02 · Email Marketing</p>
@@ -61,14 +84,12 @@
     <div>
       <div class="p-problem-card" style="border-left-color:#c62828;margin-bottom:1rem;"><h4>Problem</h4><p>We needed to drive awareness for our 2025 NPD through a post-launch emailer while navigating late legal updates that restricted validated claims, creating messaging challenges under tight timelines.</p></div>
       <div class="p-problem-card" style="border-left-color:var(--ac)"><h4>Solution</h4><p>I developed a revised messaging brief and collaborated cross-functionally to execute it. To address legal constraints, we used a media-first approach: icons, GIFs, and visual cues to communicate key features without unverified claims, ensuring an impactful and on-time launch.</p></div>
+      <a class="view-btn" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'Close emailer':'View emailer'">View emailer</a>
+      <div class="proof-panel"><img src="../images/sharkninja/1.png" alt="Shark SteamSpot post-launch emailer"></div>
     </div>
     <div>
       <h3 class="p-heading-sm">What made this hard</h3>
-      <div class="p-timeline">
-        <div class="p-tl-item"><div class="p-tl-dot" style="background:var(--ac)"></div><h4>Late-stage legal changes</h4><p>Approved claims came back restricted days before launch, requiring a full messaging pivot with no timeline extension.</p></div>
-        <div class="p-tl-item"><div class="p-tl-dot" style="background:var(--ac)"></div><h4>Cross-functional alignment under pressure</h4><p>Legal, brand, creative, and email teams all had to agree on the revised approach simultaneously.</p></div>
-        <div class="p-tl-item"><div class="p-tl-dot" style="background:var(--ac)"></div><h4>Making visual-only claims feel premium</h4><p>The pivot to icons and GIFs could have felt like a downgrade. The brief ensured the visual language elevated the product.</p></div>
-      </div>
+      <p class="p-body-text">Approved claims were pulled days before launch with no timeline extension. Legal, brand, creative, and email teams all had to align on a revised approach simultaneously. The pivot to visual-only messaging could have felt like a downgrade, but the brief ensured the icons and GIFs elevated the product instead of diminishing it.</p>
     </div>
   </div>
 </div>
@@ -76,7 +97,7 @@
 
 <div class="p-divider"></div>
 
-<!-- PROJECT 2: AMAZON -->
+<!-- AMAZON GALLERY - UPSELL PADS -->
 <div class="project-section">
 <div class="container">
   <p class="ps-label fade-up" style="color:var(--ac)">03 · Amazon Gallery and A+ Content</p>
@@ -85,6 +106,17 @@
     <div>
       <div class="p-problem-card" style="border-left-color:#c62828;margin-bottom:1rem;"><h4>Problem</h4><p>Third-party sellers were dominating sales of our steam replacement pads on Amazon. Despite Shark being the genuine manufacturer, unofficial listings were outranking the official product.</p></div>
       <div class="p-problem-card" style="border-left-color:var(--ac)"><h4>Solution</h4><p>I studied competitor listings to pinpoint what earned customer trust, then crafted creative and strategic messaging to restore confidence. By emphasizing Shark Genuine badges and a clean visual hierarchy, I made the information clear, credible, and impactful.</p></div>
+      <a class="view-btn" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'Close gallery and A+':'View gallery and A+'">View gallery and A+</a>
+      <div class="proof-panel">
+        <div class="proof-grid">
+          <img src="../images/sharkninja/pads-hero.jpg" alt="Steam mop replacement pads hero">
+          <img src="../images/sharkninja/pads-scrub.jpg" alt="Scrub pad for stubborn messes">
+          <img src="../images/sharkninja/pads-dirtgrip.jpg" alt="Dirt grip pad for everyday messes">
+          <img src="../images/sharkninja/pads-washable.jpg" alt="Machine washable pads">
+          <img src="../images/sharkninja/pads-compatibility-sq.jpg" alt="S1000 and S2000 compatibility">
+          <img src="../images/sharkninja/pads-compatibility.jpg" alt="Compatible with Shark steam mops">
+        </div>
+      </div>
     </div>
     <div>
       <h3 class="p-heading-sm">Competitive analysis framework</h3>
@@ -101,23 +133,32 @@
 
 <div class="p-divider"></div>
 
-<!-- PROJECT 3: CGI -->
+<!-- CGI BRIEF -->
 <div class="project-section alt">
 <div class="container">
   <p class="ps-label fade-up" style="color:var(--ac)">04 · CGI Creative Brief</p>
   <h2 class="ps-title fade-up">No photoshoot? No problem.</h2>
   <div class="p-two-col fade-up">
     <div>
-      <div class="p-problem-card" style="border-left-color:#c62828;margin-bottom:1rem;"><h4>Problem</h4><p>Four new attachments launched for TikTok Shop and Amazon with limited existing assets. Budget constraints prevented a new photoshoot.</p></div>
-      <div class="p-problem-card" style="border-left-color:var(--ac)"><h4>Solution</h4><p>We leveraged CGI as the primary visual strategy. I developed a creative brief informed by competitive analysis. We enhanced CGI visuals with realistic elements: dirt, grime, spills, and steam effects to demonstrate performance. We used brighter, modern color accents to align with TikTok Shop aesthetics while maintaining brand trust.</p></div>
+      <div class="p-problem-card" style="border-left-color:#c62828;margin-bottom:1rem;"><h4>Problem</h4><p>Four new attachments launched for TikTok Shop and Amazon with limited existing assets. The original product lacked high-quality imagery, and budget constraints prevented a new photoshoot.</p></div>
+      <div class="p-problem-card" style="border-left-color:var(--ac)"><h4>Solution</h4><p>We leveraged CGI as the primary visual strategy. I developed a creative brief informed by competitive analysis. We enhanced CGI visuals with realistic elements - dirt, grime, spills, and steam effects - to demonstrate performance. We used brighter, modern color accents to appeal to younger audiences and align with TikTok Shop aesthetics.</p></div>
+      <a class="view-btn" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'Close gallery and A+':'View gallery and A+'">View gallery and A+</a>
+      <div class="proof-panel">
+        <div class="proof-grid">
+          <img src="../images/sharkninja/s3972-gallery-1.jpg" alt="S3972BRN 2-in-1 versatility">
+          <img src="../images/sharkninja/s3972-gallery-2.jpg" alt="S3972BRN double-sided pads">
+          <img src="../images/sharkninja/s3972-gallery-3.jpg" alt="S3972BRN flat pad tool">
+        </div>
+        <div style="margin-top:10px;">
+          <img src="../images/sharkninja/s3972-aplus-1.jpg" alt="S3972BRN A+ hero banner" style="width:100%;border-radius:8px;margin-bottom:8px;">
+          <img src="../images/sharkninja/s3972-aplus-2.jpg" alt="S3972BRN A+ 3 steam modes" style="width:100%;border-radius:8px;">
+        </div>
+      </div>
     </div>
     <div>
       <h3 class="p-heading-sm">What the brief had to solve</h3>
-      <div class="p-timeline">
-        <div class="p-tl-item"><div class="p-tl-dot" style="background:var(--ac)"></div><h4>Credibility without real photography</h4><p>The brief specified adding realistic grime, steam wisps, and wet floor reflections to every hero shot.</p></div>
-        <div class="p-tl-item"><div class="p-tl-dot" style="background:var(--ac)"></div><h4>TikTok vs. Amazon visual language</h4><p>Two distinct color and composition treatments specified for each platform.</p></div>
-        <div class="p-tl-item"><div class="p-tl-dot" style="background:var(--ac)"></div><h4>Four attachments, one cohesive story</h4><p>Each attachment needed its own use-case visual but had to feel like part of the same system.</p></div>
-      </div>
+      <p class="p-body-text">Making CGI feel real enough to earn consumer trust on product pages that live next to competitor photography. The brief specified adding realistic grime, steam wisps, and wet floor reflections to every hero shot.</p>
+      <p class="p-body-text">Two distinct visual treatments were needed - one for TikTok Shop's younger, trend-forward audience and one for Amazon's information-dense listing format - while keeping all four attachments feeling like part of the same product system.</p>
     </div>
   </div>
 </div>
@@ -125,15 +166,36 @@
 
 <div class="p-divider"></div>
 
-<!-- PROJECTS 4, 5, 6 -->
+<!-- MORE PROJECTS -->
 <div class="project-section">
 <div class="container">
   <p class="ps-label fade-up" style="color:var(--ac)">05 · More Projects</p>
   <h2 class="ps-title fade-up">Packaging, paid social, and social video</h2>
   <div class="p-three-col fade-up">
-    <div class="p-phase-card" style="border-left:3px solid var(--ac)"><div class="num" style="color:var(--ac)">Packaging Update</div><h4>Small change. Large-scale impact.</h4><p>A global supply chain shift due to US tariffs moved production from China to Vietnam. I helped implement the boilerplate update across all hardfloor packaging assets, ensuring accuracy at every consumer touchpoint for every single SKU.</p></div>
-    <div class="p-phase-card" style="border-left:3px solid var(--ac)"><div class="num" style="color:var(--ac)">Paid Social</div><h4>Quick-turn Amazon sale campaign</h4><p>I supported quick visual and copy updates to videos, iterating and catching small errors. By aligning the final content with the promo's goals on a tight timeframe, I balanced speed with accuracy. Campaign launched on schedule.</p></div>
-    <div class="p-phase-card" style="border-left:3px solid var(--ac)"><div class="num" style="color:var(--ac)">Social Video</div><h4>Steam Blaster DIY demo</h4><p>I noticed the Steam Blaster wasn't fully represented in social content and took the initiative to develop content direction, creating a DIY demo at home showing the feature in a real, relatable environment. This filled a content gap for the social team.</p></div>
+    <div class="p-phase-card" style="border-left:3px solid var(--ac)">
+      <div class="num" style="color:var(--ac)">Packaging Update</div>
+      <h4>Small change. Large-scale impact.</h4>
+      <p>A global supply chain shift due to US tariffs moved production from China to Vietnam. I helped implement the boilerplate update across all hardfloor packaging assets, ensuring accuracy at every consumer touchpoint.</p>
+      <a class="view-btn" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'Close':'View packaging'">View packaging</a>
+      <div class="proof-panel"><img src="../images/sharkninja/2.png" alt="Packaging boilerplate update across SKUs" style="border-radius:8px;"></div>
+    </div>
+    <div class="p-phase-card" style="border-left:3px solid var(--ac)">
+      <div class="num" style="color:var(--ac)">Paid Social</div>
+      <h4>Quick-turn Amazon sale campaign</h4>
+      <p>Supported quick visual and copy updates to promo videos for an Amazon sale. Balanced speed with accuracy across creative iterations. Campaign launched on schedule.</p>
+      <a class="view-btn" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'Close':'View ad'">View ad</a>
+      <div class="proof-panel">
+        <img src="../images/sharkninja/3.png" alt="Shark StainStriker paid social ad" style="border-radius:8px;margin-bottom:8px;">
+        <video controls style="border-radius:8px;width:100%;" poster="../images/sharkninja/3.png"><source src="../images/sharkninja/paid-ad-prime-day.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+    <div class="p-phase-card" style="border-left:3px solid var(--ac)">
+      <div class="num" style="color:var(--ac)">Social Video</div>
+      <h4>Steam Blaster DIY demo</h4>
+      <p>I noticed the Steam Blaster feature wasn't represented in social content for the S2001 and took the initiative to create a DIY demo at home, filling a content gap for the social team.</p>
+      <a class="view-btn" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'Close':'View video'">View video</a>
+      <div class="proof-panel"><video controls style="border-radius:8px;width:100%;"><source src="../images/sharkninja/steam-blaster-demo.mp4" type="video/mp4"></video></div>
+    </div>
   </div>
 </div>
 </div>
@@ -147,41 +209,19 @@
   <h2 class="ps-title fade-up">What this co-op built</h2>
   <div class="p-three-col fade-up">
     <div style="background:#fff;border-radius:10px;padding:1.5rem;border:0.5px solid rgba(0,0,0,0.06);">
-      <h4 style="font-size:14px;font-weight:600;margin-bottom:1rem;">Technical Skills</h4>
+      <h4 style="font-size:14px;font-weight:600;margin-bottom:1rem;">Technical skills</h4>
       <div style="font-size:13px;color:var(--text-secondary);line-height:2;">Developing 360 marketing collateral · Digital content management (DAM) · Amazon A+ and gallery content · SEO-led copywriting · CGI creative brief development · Packaging copy and compliance</div>
       <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:4px;">
         <span class="p-chip" style="font-size:10px;padding:3px 10px;">Microsoft Office</span><span class="p-chip" style="font-size:10px;padding:3px 10px;">DAM</span><span class="p-chip" style="font-size:10px;padding:3px 10px;">Veeva</span><span class="p-chip" style="font-size:10px;padding:3px 10px;">Wrike</span><span class="p-chip" style="font-size:10px;padding:3px 10px;">Jira</span><span class="p-chip" style="font-size:10px;padding:3px 10px;">MOZ</span><span class="p-chip" style="font-size:10px;padding:3px 10px;">HubSpot</span>
       </div>
     </div>
     <div style="background:#fff;border-radius:10px;padding:1.5rem;border:0.5px solid rgba(0,0,0,0.06);">
-      <h4 style="font-size:14px;font-weight:600;margin-bottom:1rem;">Soft Skills</h4>
-      <div style="font-size:13px;color:var(--text-secondary);line-height:2;">Cross-functional teamwork · Communication for impact · Time and priority management · Project coordination · Problem-solving under constraints · Adaptability · Stakeholder management · Initiative and proactive ownership</div>
+      <h4 style="font-size:14px;font-weight:600;margin-bottom:1rem;">Soft skills</h4>
+      <div style="font-size:13px;color:var(--text-secondary);line-height:2;">Cross-functional teamwork · Communication for impact · Time and priority management · Project coordination · Problem-solving under constraints · Adaptability</div>
     </div>
     <div style="background:#fff;border-radius:10px;padding:1.5rem;border:0.5px solid rgba(0,0,0,0.06);">
-      <h4 style="font-size:14px;font-weight:600;margin-bottom:1rem;">Shift in Mindset</h4>
-      <div style="font-size:13px;color:var(--text-secondary);line-height:2;">Sharpened attention to detail · Curious, proactive problem-solver · Embraced "progress over perfection" · Comfortable with ownership · Balancing speed with brand integrity · Understanding that filling gaps is leadership</div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="p-divider"></div>
-
-<!-- CHARTS -->
-<div class="project-section">
-<div class="container">
-  <p class="ps-label fade-up" style="color:var(--ac)">07 · Visual Summary</p>
-  <h2 class="ps-title fade-up">The 360 IMC scope</h2>
-  <div class="p-chart-row fade-up">
-    <div class="p-chart-block">
-      <p class="p-chart-q">Brand marketing touchpoints covered during co-op</p>
-      <div style="position:relative;height:260px;"><canvas id="imcChart"></canvas></div>
-      <div class="p-chart-insight" style="background:var(--ac-light);color:var(--ac-text);"><strong>Key takeaway:</strong> A true 360 role, from the box the product ships in to the social content that builds the community around it. Every channel served a distinct function in the consumer journey.</div>
-    </div>
-    <div class="p-chart-block">
-      <p class="p-chart-q">Cross-functional teams collaborated with on each project</p>
-      <div style="position:relative;height:260px;"><canvas id="xfuncChart"></canvas></div>
-      <div class="p-chart-insight" style="background:var(--ac-light);color:var(--ac-text);"><strong>Key takeaway:</strong> Real brand marketing at a consumer company means every deliverable is a cross-functional negotiation. Legal, creative, brand, retail, social, and agency partners all at the table simultaneously.</div>
+      <h4 style="font-size:14px;font-weight:600;margin-bottom:1rem;">Shift in mindset</h4>
+      <div style="font-size:13px;color:var(--text-secondary);line-height:2;">Sharpened attention to detail · Curious, proactive problem-solver · Embraced "progress over perfection" · Comfortable with ownership · Balancing speed with brand integrity</div>
     </div>
   </div>
 </div>
@@ -191,28 +231,13 @@
 
 <div class="project-end">
   <div class="container fade-up">
-    <h2>From the Box to the <span style="color:var(--ac)">Social Feed</span></h2>
-    <p>Six projects. One product line. A complete 360 view of how a major consumer brand brings a product to market, and what it actually takes to execute it with integrity, speed, and cross-functional precision.</p>
-    <p style="font-size:12px;color:var(--text-secondary);margin-top:2rem;">Aishwarya Sivakumar · SharkNinja Brand Marketing and IMC Co-op · Boston MA</p>
+    <p style="font-size:12px;color:var(--text-secondary);letter-spacing:0.05em;">Aishwarya Sivakumar · SharkNinja Brand Marketing and IMC Co-op · Needham, MA</p>
   </div>
 </div>
 </div>
 
-<script>
-const AC='#5A7A8A',DK='#1a1a1a',RD='#C8372D',OR='#E8762B',MID='#ccc';
-Chart.defaults.font.family='Plus Jakarta Sans,system-ui,sans-serif';
-Chart.defaults.font.size=12;Chart.defaults.color='#666';
-</script>
-<script>
-const AC='#5A7A8A',DK='#2D2D2D';
-Chart.defaults.font.family="'Plus Jakarta Sans',sans-serif";Chart.defaults.font.size=12;Chart.defaults.color='#666';
-
-new Chart(document.getElementById('imcChart'),{type:'radar',data:{labels:['Packaging','Amazon A+','Email','Paid Social','Social Video','CGI Brief','Copy/SEO','Retail Collateral'],datasets:[{label:'Co-op coverage',data:[90,85,80,75,70,80,85,75],backgroundColor:AC+'33',borderColor:AC,borderWidth:2,pointBackgroundColor:AC}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{min:0,max:100,ticks:{display:false},grid:{color:'#eee'}}}}});
-
-new Chart(document.getElementById('xfuncChart'),{type:'doughnut',data:{labels:['Legal and Compliance','Creative and Design','Brand Strategy','Retail and Amazon','Social and Digital','Agency Partners'],datasets:[{data:[18,22,20,17,15,8],backgroundColor:['#C8372D',AC,DK,'#888','#E8762B','#ccc'],borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,cutout:'55%',plugins:{legend:{position:'bottom',labels:{boxWidth:10,padding:10,font:{size:11}}}}}});
-</script>
-<div class="container"><div class="footer-cta fade-up"><h3>Interested in working together?</h3><p>I'm always open to new opportunities and conversations.</p><a href="../contact.html" class="btn">Get in Touch</a></div></div>
-<footer class="footer"><div class="footer-body"><div class="footer-left"><div class="footer-name">Aishwarya <span class="s-italic">S.</span></div><p class="footer-tagline">Marketer, storyteller, and strategist based in US.</p><div class="footer-socials"><a href="http://www.linkedin.com/in/aishwarya-sivakumar-53ba771b2" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://www.behance.net/AishwaryaSivakumar?locale=en_US" target="_blank" rel="noopener" aria-label="Behance"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.767-.63.16-1.3.24-2.004.24H0v-15.15h6.938z"/></svg></a></div></div><div class="footer-right"><a href="mailto:aishwarya.sivakumaar@gmail.com" class="footer-email">aishwarya.sivakumaar@gmail.com</a><div class="footer-nav"><a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../photography.html">Photography</a><a href="../blog.html">Blog</a><a href="../contact.html">Contact</a></div></div></div><div class="footer-bottom"><span>Aishwarya Sivakumar 2025</span><span>Designed with care in Boston</span></div></footer>
+<div class="container"><div class="footer-cta"><h3>Interested in working together?</h3><p>I'm always open to new opportunities and conversations.</p><a href="../contact.html" class="btn">Get in Touch</a></div></div>
+<footer class="footer"><div class="footer-body"><div class="footer-left"><div class="footer-name">Aishwarya <span class="s-italic">S.</span></div><p class="footer-tagline">Marketer, storyteller, and strategist.</p></div><div class="footer-right"><a href="mailto:aishwarya.sivakumaar@gmail.com" class="footer-email">aishwarya.sivakumaar@gmail.com</a><div class="footer-nav"><a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../photography.html">Photography</a><a href="../blog.html">Blog</a><a href="../contact.html">Contact</a></div></div></div><div class="footer-bottom"><span>Aishwarya Sivakumar 2025</span></div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>
